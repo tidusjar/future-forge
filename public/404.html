@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=./index.html" />
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=/future-forge/" />
     <script>
-      // For client-side routers (like React Router)
-      // Redirect to index.html and preserve the path
-      var redirectTo = window.location.pathname.replace(/\/future-forge\//, '/future-forge/');
-      window.location.replace('/future-forge/' + 'index.html' + window.location.search + window.location.hash);
+      // GitHub Pages SPA redirect for React Router
+      var l = window.location;
+      var repo = '/future-forge';
+      var redirect = repo + '/index.html';
+      var fullPath = l.pathname.replace(repo, '');
+      var search = l.search || '';
+      var hash = l.hash || '';
+      // Only redirect if not already at index.html
+      if (!l.pathname.endsWith('index.html')) {
+        window.location.replace(redirect + '?redirect=' + encodeURIComponent(fullPath + search + hash));
+      }
     </script>
   </head>
   <body>
-    <p>Redirecting...</p>
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected, <a href="/future-forge/">click here</a>.</p>
   </body>
 </html>
