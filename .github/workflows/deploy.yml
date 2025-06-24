@@ -10,7 +10,6 @@ permissions:
   pages: write
   id-token: write
 
-# Environment variables available to all jobs and steps
 env:
   NODE_ENV: production
 
@@ -21,37 +20,36 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:      - name: Checkout
+    steps:
+      - name: Checkout
         uses: actions/checkout@v4
-        
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'npm'
 
-      # Cache node_modules
       - name: Cache dependencies
         uses: actions/cache@v3
         with:
-          path: |
-            **/node_modules
-            ${{ github.workspace }}/.next/cache
+          path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-modules-
-            
+
       - name: Install dependencies
         run: npm ci
-          - name: Build
+
+      - name: Build
         run: npm run build
         env:
           VITE_BASE_URL: /future-forge
           NODE_ENV: production
-        
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
