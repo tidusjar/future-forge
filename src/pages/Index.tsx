@@ -175,7 +175,7 @@ const Index = () => {
               <TimelineEvent
                 title="Winner Announcement"
                 description="Jury panel selects and announces the winning team"
-                date="July 11th, 2025"
+                date="Between July 14th - 18th, 2025"
               />
             </div>
           </div>
