@@ -6,89 +6,82 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 100%;        /* White */
+    --foreground: 233 30% 13%;      /* Navy (#1B2037) */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 30 28% 92%;             /* Cream (#EEE8E2) */
+    --card-foreground: 233 30% 13%; /* Navy */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;           /* White */
+    --popover-foreground: 233 30% 13%; /* Navy */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 233 30% 13%;         /* Navy */
+    --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 228 100% 83%;      /* Lilac (#9AADFF) */
+    --secondary-foreground: 233 30% 13%; /* Navy */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 30 28% 92%;            /* Cream */
+    --muted-foreground: 233 30% 13%; /* Navy */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 228 100% 83%;         /* Lilac */
+    --accent-foreground: 233 30% 13%; /* Navy */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;       /* Red-600 */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 30 28% 92%;           /* Cream */
+    --input: 30 28% 92%;            /* Cream */
+    --ring: 228 100% 83%;           /* Lilac */
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 233 30% 13%; /* Navy */
+    --sidebar-foreground: 0 0% 100%; /* White */
+    --sidebar-primary: 228 100% 83%; /* Lilac */
+    --sidebar-primary-foreground: 233 30% 13%; /* Navy */
+    --sidebar-accent: 30 28% 92%; /* Cream */
+    --sidebar-accent-foreground: 233 30% 13%; /* Navy */
+    --sidebar-border: 30 28% 92%; /* Cream */
+    --sidebar-ring: 228 100% 83%; /* Lilac */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 233 30% 13%; /* Navy */
+    --foreground: 0 0% 100%; /* White */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 233 30% 13%; /* Navy */
+    --card-foreground: 0 0% 100%; /* White */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 233 30% 13%; /* Navy */
+    --popover-foreground: 0 0% 100%; /* White */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 228 100% 83%; /* Lilac */
+    --primary-foreground: 233 30% 13%; /* Navy */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 30 28% 92%; /* Cream */
+    --secondary-foreground: 233 30% 13%; /* Navy */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 30 28% 92%; /* Cream */
+    --muted-foreground: 233 30% 13%; /* Navy */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 30 28% 92%; /* Cream */
+    --accent-foreground: 233 30% 13%; /* Navy */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%; /* Red-600 */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 228 100% 83%; /* Lilac */
+    --input: 228 100% 83%; /* Lilac */
+    --ring: 30 28% 92%; /* Cream */
+    --sidebar-background: 233 30% 13%; /* Navy */
+    --sidebar-foreground: 0 0% 100%; /* White */
+    --sidebar-primary: 30 28% 92%; /* Cream */
+    --sidebar-primary-foreground: 233 30% 13%; /* Navy */
+    --sidebar-accent: 228 100% 83%; /* Lilac */
+    --sidebar-accent-foreground: 233 30% 13%; /* Navy */
+    --sidebar-border: 228 100% 83%; /* Lilac */
+    --sidebar-ring: 30 28% 92%; /* Cream */
   }
 }
 
