@@ -60,7 +60,7 @@ const Index = () => {
       {/* Header */}
       <header className="w-full bg-primary text-primary-foreground shadow-md py-4 px-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <img src="/exclaimer-logo.png" alt="Exclaimer Logo" className="w-10 h-10 object-contain mr-2" />
+          <img src="/future-forge/exclaimer-logo.png" alt="Exclaimer Logo" className="w-10 h-10 object-contain mr-2" />
           <span className="text-2xl font-bold tracking-tight">Exclaimer Hackathon</span>
         </div>
         <nav className="space-x-6">
