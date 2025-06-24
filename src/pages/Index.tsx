@@ -26,22 +26,42 @@ const Index = () => {
     {
       title: 'Exclaimer Related',
       description: 'Your project must be related to Exclaimer products, services, or potential customer features.',
-      icon: <Target className="w-5 h-5 text-blue-400" />
+      icon: <Target className="w-5 h-5 text-secondary" />
     },
     {
       title: 'Full Angular Application',
       description: 'Build a complete Angular application using the newest versions and features.',
-      icon: <Code className="w-5 h-5 text-red-400" />
+      icon: <Code className="w-5 h-5 text-secondary" />
     },
     {
       title: 'No Backend Changes',
       description: 'Focus on frontend innovation without touching backend systems.',
-      icon: <GitBranch className="w-5 h-5 text-green-400" />
+      icon: <GitBranch className="w-5 h-5 text-secondary" />
+    },
+    {
+      title: 'Future Customer Feature',
+      description: 'Could be a future customer feature consideration for Exclaimer products.',
+      icon: <Users className="w-5 h-5 text-secondary" />
     },
     {
       title: 'Reusable Components',
       description: 'Create components that can be reused across different parts of the application.',
-      icon: <Users className="w-5 h-5 text-purple-400" />
+      icon: <Code className="w-5 h-5 text-secondary" />
+    },
+    {
+      title: 'State Management',
+      description: 'State for state management must be used in your Angular application.',
+      icon: <Presentation className="w-5 h-5 text-secondary" />
+    },
+    {
+      title: 'Idea Confirmation',
+      description: 'Your team\'s project idea must be confirmed by 10:30am on the 1st day in the #angular-hackathon-2025 Slack channel.',
+      icon: <Clock className="w-5 h-5 text-secondary" />
+    },
+    {
+      title: 'Unit Tests',
+      description: 'Your application must include unit tests to ensure code quality and reliability.',
+      icon: <Code className="w-5 h-5 text-secondary" />
     }
   ];
 
@@ -150,9 +170,10 @@ const Index = () => {
             </div>
             <div className="space-y-8">
               <TimelineEvent
-                title="Preparation Phase"
-                description="MFE creation, communications kickoff, and Slack channel setup"
+                title="Development Environment Setup"
+                description="There are individual branches for each team with blank MFE (Micro Frontend) templates in the cloud-ui monorepo. Setup instructions available in #angular-hackathon-2025 Slack channel."
                 date="Before July 7th"
+                isHighlight={true}
               />
               <TimelineEvent
                 title="Hackathon Begins"
