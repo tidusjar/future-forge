@@ -1,4 +1,3 @@
-
 name: Deploy to GitHub Pages
 
 on:
@@ -44,6 +43,11 @@ jobs:
         env:
           VITE_BASE_URL: /future-forge
           NODE_ENV: production
+
+      - name: Build
+        run: |
+          npm run build
+          npm run postbuild
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
