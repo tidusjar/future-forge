@@ -37,12 +37,10 @@ jobs:
           key: ${{ runner.os }}-modules-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-modules-
-
       - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
+        run: |
+          npm ci
+          npm install -g vite      
         env:
           VITE_BASE_URL: /future-forge
           NODE_ENV: production
